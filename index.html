@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>인기 영화 목록</h1>
+        <p>영화진흥위원회 API 에서 영화 제목, 개봉일, 순위를 가져옵니다.</p>
+    </header>
+
+    <main class="container">
+        <button id="loadMovieBtn" type="button" class="btn">영화 목록 보기</button>
+        <pre class="code-box" id="movieConsole">
+            영화진흥위원회 API 결과가 이곳에 표시됩니다.
+        </pre>
+
+        <section id="movieList" class="movie-list"></section>
+    </main>
+
+
+    <!-- 영화진흥위원회 API를 사용하기 
+        -> 포스터 X, 한국영화 포함  
+    -->
+    <!-- <script src="js/02movie.js"></script> -->
+
+
+    <!-- tmdb API 사용하기
+        -> 포스터 O, 순위가 세계 중심 
+     -->
+    <script src="js/03tmdb.js"></script>
+</body>
+</html>
